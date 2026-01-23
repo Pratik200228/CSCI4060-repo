@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EasyGrader — Home</title>
+  <meta name="description" content="Submit assignments, run public test cases, and view results in one place." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <header class="topbar">
+    <div class="container nav">
+        <a class="brand" href="#">
+            <img src="./images/easygrader_logo.png" alt="EasyGrader logo" class="logo">
+            <span>EasyGrader</span>
+          </a>
+          
+      <nav class="nav-links" id="navLinks" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="btn" id="themeBtn" type="button" aria-label="Toggle theme">🌙</button>
+        <a class="btn" href="#login">Log in</a>
+        <a class="btn primary" href="#get-started">Get started</a>
+        <button class="btn hamburger" id="menuBtn" type="button" aria-label="Open menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="card hero-card">
+        <div class="pill">
+          <span class="dot" aria-hidden="true"></span>
+          <span>Fast • Secure • Student-friendly</span>
+        </div>
+
+        <h1>Submit code. Run tests. See results instantly.</h1>
+        <p class="muted">
+          A simple code-testing web app: students upload assignments, run public test cases,
+          and get clear feedback — all in one place.
+        </p>
+
+        <div class="cta">
+          <a class="btn primary" href="#get-started">Create account</a>
+          <a class="btn" href="#demo" id="demoBtn">View demo</a>
+        </div>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-num">⚡</div>
+            <div>
+              <div class="stat-title">Quick feedback</div>
+              <div class="stat-sub muted">Run public tests before final submit</div>
+            </div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">🧪</div>
+            <div>
+              <div class="stat-title">Sandbox execution</div>
+              <div class="stat-sub muted">Safer runs and consistent grading</div>
+            </div>
+          </div>
+          <div class="stat">
+            <div class="stat-num">📦</div>
+            <div>
+              <div class="stat-title">Simple uploads</div>
+              <div class="stat-sub muted">Drag-drop files, clear status</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- RIGHT CARD -->
+      <aside class="card side-card" aria-label="Quick actions">
+        <h2>Quick actions</h2>
+
+        <div class="action">
+          <div class="badge">1</div>
+          <div>
+            <div class="action-title">Upload assignment</div>
+            <div class="muted">Submit your code files for an assignment</div>
+          </div>
+        </div>
+
+        <div class="action">
+          <div class="badge">2</div>
+          <div>
+            <div class="action-title">Run public tests</div>
+            <div class="muted">See pass/fail and outputs right away</div>
+          </div>
+        </div>
+
+        <div class="action">
+          <div class="badge">3</div>
+          <div>
+            <div class="action-title">View history</div>
+            <div class="muted">Track submissions with timestamps</div>
+          </div>
+        </div>
+
+        <form class="mini-form" id="newsletterForm">
+          <label for="email" class="muted">Get updates</label>
+          <div class="mini-row">
+            <input id="email" type="email" placeholder="you@example.com" required />
+            <button class="btn primary" type="submit">Join</button>
+          </div>
+          <p class="muted tiny" id="formMsg" role="status" aria-live="polite"></p>
+        </form>
+      </aside>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section" id="features">
+      <h2>Features</h2>
+      <p class="muted">Everything you need for a clean student → testing → results workflow.</p>
+
+      <div class="grid">
+        <article class="card feature">
+          <h3>File validation</h3>
+          <p class="muted">Block wrong file types based on the assignment language.</p>
+        </article>
+        <article class="card feature">
+          <h3>Public test cases</h3>
+          <p class="muted">Let students self-check before they submit for grading.</p>
+        </article>
+        <article class="card feature">
+          <h3>Clear results</h3>
+          <p class="muted">See pass/fail, output, and compile/runtime errors in one view.</p>
+        </article>
+        <article class="card feature">
+          <h3>Submission timestamps</h3>
+          <p class="muted">Every upload is stored with a time record for fairness.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section" id="how">
+      <h2>How it works</h2>
+      <div class="steps card">
+        <ol>
+          <li><b>Pick an assignment</b> → upload code files.</li>
+          <li><b>Run public tests</b> → see feedback immediately.</li>
+          <li><b>Final submit</b> → grading queue starts in the backend.</li>
+        </ol>
+      </div>
+    </section>
+   
+    <footer class="footer">
+        <div class="muted tiny">© <span id="year"></span> Easygrader. All rights reserved.</div>
+    </footer>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | EasyGrader</title>
+
+  <!-- Reuse same CSS -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- HEADER (same as homepage) -->
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="homepage.html">
+        <img src="./images/easygrader_logo.png" alt="EasyGrader Logo" class="logo">
+        <span>EasyGrader</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="homepage.html#features">Features</a>
+        <a href="homepage.html#how">How It Works</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTACT CONTENT -->
+  <main class="container">
+    <section class="section">
+      <h1>Contact! The Easygrader Support Team</h1>
+      <p class="muted">Have a question? Send a message.</p>
+
+      <form id="contactForm" class="card contact-form">
+        <!-- Name -->
+        <label for="name">Name</label>
+        <input
+          id="name"
+          type="text"
+          placeholder="Your name"
+          required
+        />
+
+
+         <!-- Email -->
+         <label for="Email">Email</label>
+         <input
+           id="email"
+           type="text"
+           placeholder="Your email"
+           required
+         />
+
+        <!-- Topic -->
+        <label for="topic">Topic</label>
+        <select id="topic">
+          <option>General</option>
+          <option>Assignments</option>
+          <option>Grading</option>
+          <option>Bug report</option>
+        </select>
+
+        <!-- Message -->
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          rows="5"
+          placeholder="Write your message..."
+          required
+        ></textarea>
+
+        <!-- Submit -->
+        <button class="btn primary" type="submit">Send</button>
+
+        <p id="formMsg" class="muted tiny"></p>
+      </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="muted tiny">
+        © <span id="year"></span> EasyGrader. All rights reserved.
+      </div>
+    </footer>
+  </main>
+
+  <!-- Reuse same JS -->
+  <script src="./app.js"></script>
+</body>
+</html>

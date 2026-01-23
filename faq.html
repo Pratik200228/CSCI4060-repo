@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ | EasyGrader</title>
+
+  <!-- Shared CSS -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <!-- HEADER / NAV -->
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="homepage.html">
+        <img src="./easygrader_logo.png" alt="EasyGrader Logo" class="logo">
+        <span>EasyGrader</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="homepage.html">Home</a>
+        <a href="homepage.html#features">Features</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- FAQ CONTENT -->
+  <main class="container">
+    <section class="section">
+      <h1>Frequently Asked Questions</h1>
+      <p class="muted">Answers to common questions about EasyGrader.</p>
+
+      <div class="faq">
+        <details class="card">
+          <summary>Is this secure?</summary>
+          <p class="muted">
+            The application implements authentication and authorization to ensure only authorized users can access specific features. 
+            Uploaded code is processed in an isolated environment, inputs are validated, and the database is protected against unauthorized 
+            access using secure configurations.
+          </p>
+        </details>
+
+        <details class="card">
+          <summary>Can it support multiple programming languages?</summary>
+          <p class="muted">
+            Yes. The system supports running code written in multiple programming languages using isolated execution environments,
+             ensuring safe and accurate testing for each language.
+          </p>
+        </details>
+
+        <details class="card">
+          <summary>Can students run tests without submitting?</summary>
+          <p class="muted">
+            Yes. If the professor enables it, public test cases can be run independently so students can validate their code before final submission.
+          </p>
+        </details>
+
+        <details class="card">
+          <summary>Does EasyGrader store submission history?</summary>
+          <p class="muted">
+            Every submission is saved with a timestamp, allowing instructors
+            and students to track progress and deadlines.
+          </p>
+        </details>
+
+        <details class="card">
+            <summary>Who can view my submitted code?</summary>
+            <p class="muted">
+              Only the student and authorized instructors can view submitted code.
+            </p>
+          </details>
+        
+          <details class="card">
+            <summary>Can students resubmit assignments?</summary>
+            <p class="muted">
+              Yes. Students may resubmit assignments before the deadline if resubmissions are allowed by the instructor.
+            </p>
+          </details>
+
+          <details class="card">
+            <summary>Are late submissions allowed?</summary>
+            <p class="muted">
+              Late submission policies depend on the assignment settings configured by the professor.
+            </p>
+          </details>
+          
+          <details class="card">
+            <summary>Are both public and private test cases supported?</summary>
+            <p class="muted">
+              Yes. Public test cases may be used for practice, while private test cases are used for final evaluation.
+            </p>
+          </details>
+          
+          <details class="card">
+            <summary>What happens if my code fails to compile?</summary>
+            <p class="muted">
+              The system displays compilation or runtime errors to help students debug their code.
+            </p>
+          </details>
+          
+          <details class="card">
+            <summary>Is there a time limit for code execution?</summary>
+            <p class="muted">
+              Yes. Programs are subject to execution time limits to ensure fair use of system resources.
+            </p>
+          </details>
+          
+
+      </div>
+    </section>
+
+    <div class="container faq-help-container">
+        <a href="contact.html" class="faq-help">
+          ❓ The question I’m looking for is not here
+        </a>
+      </div>
+      
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="muted tiny">
+        © <span id="year"></span> EasyGrader. All rights reserved.
+      </div>
+    </footer>
+  </main>
+
+  <!-- Shared JS -->
+  <script src="./app.js"></script>
+</body>
+</html>
