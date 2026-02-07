@@ -1,0 +1,223 @@
+/* Login page – light card, green accent, pill toggle */
+.login-page {
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px 0;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 400px;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+  padding: 32px 28px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Pill toggle: Student | Professor */
+.login-toggle {
+  display: flex;
+  background: #f1f5f9;
+  border-radius: 999px;
+  padding: 4px;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.login-toggle-option {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #64748b;
+  background: transparent;
+  cursor: pointer;
+  transition: color 0.2s ease, background 0.2s ease;
+  font-family: inherit;
+}
+
+.login-toggle-option:hover {
+  color: #475569;
+}
+
+.login-toggle-option.active.student {
+  background: #2563eb;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.35);
+}
+
+.login-toggle-option.active.professor {
+  background: #16a34a;
+  color: #fff;
+  box-shadow: 0 2px 8px rgba(22, 163, 74, 0.35);
+}
+
+/* Inputs */
+.login-input {
+  width: 100%;
+  padding: 14px 16px;
+  margin-bottom: 14px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  font-size: 15px;
+  color: #1e293b;
+  background: #fff;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-input::placeholder {
+  color: #94a3b8;
+}
+
+.login-input:focus {
+  border-color: #16a34a;
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.15);
+}
+
+/* Row: Remember me + Forgot Password? */
+.login-options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.login-remember {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #475569;
+  font-weight: 500;
+  user-select: none;
+}
+
+.login-remember input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #16a34a;
+  cursor: pointer;
+  margin: 0;
+}
+
+.login-remember-text {
+  color: #475569;
+}
+
+.login-forgot {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #475569;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.login-forgot:hover {
+  color: #16a34a;
+}
+
+.login-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #e2e8f0;
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* IT Support row */
+.login-support-row {
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.login-support {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #475569;
+}
+
+.login-icon-support {
+  background: transparent;
+  font-size: 16px;
+}
+
+/* Login button – green pill */
+.login-btn {
+  width: 100%;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 999px;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+  font-family: inherit;
+}
+
+.login-btn.student {
+  background: #2563eb;
+  box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+}
+
+.login-btn.student:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.login-btn.professor {
+  background: #16a34a;
+  box-shadow: 0 4px 14px rgba(22, 163, 74, 0.4);
+}
+
+.login-btn.professor:hover {
+  background: #15803d;
+  transform: translateY(-1px);
+}
+
+.login-btn:active {
+  transform: translateY(0);
+}
+
+.login-message {
+  margin-top: 14px;
+  font-size: 13px;
+  color: #64748b;
+  text-align: center;
+}
+
+.login-footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.login-footer a {
+  font-weight: 700;
+  color: #16a34a;
+}
+
+.login-footer a:hover {
+  text-decoration: underline;
+}
