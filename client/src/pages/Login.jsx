@@ -84,7 +84,7 @@ export default function Login() {
         {message && <p className="login-message">{message}</p>}
 
         <p className="login-footer muted">
-          Don&apos;t have an account? <Link to="/">Register</Link>
+          Don&apos;t have an account? <Link to="/register">Register</Link>
         </p>
       </form>
     </section>

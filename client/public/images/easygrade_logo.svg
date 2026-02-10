@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+  <rect width="40" height="40" rx="10" fill="url(#eg-grad)"/>
+  <!-- Left bracket < -->
+  <path d="M16 14l-4 6 4 6" stroke="rgba(255,255,255,0.95)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Slash / -->
+  <path d="M20 12v16" stroke="rgba(255,255,255,0.95)" stroke-width="2" stroke-linecap="round"/>
+  <!-- Right bracket > -->
+  <path d="M24 14l4 6-4 6" stroke="rgba(255,255,255,0.95)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <defs>
+    <linearGradient id="eg-grad" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#334155"/>
+      <stop offset="1" stop-color="#1e293b"/>
+    </linearGradient>
+  </defs>
+</svg>

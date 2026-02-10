@@ -1,0 +1,252 @@
+/* Register page – light gray background, white box, black text (match reference) */
+.register-page {
+  min-height: 100vh;
+  background: #e5e7eb;
+  padding: 32px 16px;
+  box-sizing: border-box;
+}
+
+.register-wrapper {
+  max-width: 640px;
+  margin: 0 auto;
+  color: #111;
+}
+
+.register-main-heading {
+  margin: 0 0 8px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.register-subheading {
+  margin: 0 0 12px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #111;
+}
+
+.register-intro {
+  margin: 0 0 12px;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.register-intro-last {
+  margin-bottom: 24px;
+}
+
+/* White content card */
+.register-card {
+  background: #fff;
+  border: 1px solid #d1d5db;
+  padding: 28px 24px;
+  box-sizing: border-box;
+}
+
+.register-label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #111;
+  margin: 14px 0 6px;
+}
+
+.register-label:first-of-type {
+  margin-top: 0;
+}
+
+.register-required {
+  color: #111;
+}
+
+.register-input {
+  width: 100%;
+  padding: 10px 12px;
+  margin-bottom: 4px;
+  border: 1px solid #9ca3af;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  color: #111;
+  background: #fff;
+  outline: none;
+  box-sizing: border-box;
+  font-family: inherit;
+}
+
+.register-input::placeholder {
+  color: #6b7280;
+}
+
+.register-input:focus {
+  border-color: #374151;
+  box-shadow: 0 0 0 1px #374151;
+}
+
+.register-select {
+  cursor: pointer;
+  appearance: auto;
+}
+
+/* First / Last name row */
+.register-name-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.register-name-field {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.register-name-hint {
+  font-size: 0.8rem;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+/* Email with @ prefix */
+.register-email-wrap {
+  display: flex;
+  align-items: stretch;
+  border: 1px solid #9ca3af;
+  border-radius: 4px;
+  background: #fff;
+}
+
+.register-email-at {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  font-size: 0.95rem;
+  color: #6b7280;
+  background: #f3f4f6;
+  border-right: 1px solid #9ca3af;
+  border-radius: 4px 0 0 4px;
+}
+
+.register-input-email {
+  border: none;
+  border-radius: 0 4px 4px 0;
+  margin-bottom: 0;
+}
+
+.register-email-wrap:focus-within {
+  border-color: #374151;
+  box-shadow: 0 0 0 1px #374151;
+}
+
+.register-email-wrap:focus-within .register-email-at {
+  border-color: #374151;
+}
+
+.register-input-error {
+  border-color: #dc2626;
+}
+
+.register-input-error:focus {
+  border-color: #dc2626;
+}
+
+.register-error {
+  display: block;
+  font-size: 0.8rem;
+  color: #dc2626;
+  margin-bottom: 6px;
+}
+
+/* Terms and conditions checkbox */
+.register-terms-label {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 4px;
+  font-size: 0.95rem;
+  color: #111;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.register-terms-label input[type="checkbox"] {
+  margin-top: 3px;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  cursor: pointer;
+  accent-color: #111;
+}
+
+.register-terms-link {
+  font-weight: 700;
+  color: #111;
+  text-decoration: underline;
+}
+
+.register-terms-link:hover {
+  color: #374151;
+}
+
+.register-terms-checkbox-error {
+  outline: 2px solid #dc2626;
+  outline-offset: 1px;
+}
+
+/* Submit button – black background, white text, rectangular */
+.register-btn {
+  width: 100%;
+  padding: 14px 24px;
+  margin-top: 24px;
+  border: 1px solid #111;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #fff;
+  background: #111;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+  font-family: inherit;
+}
+
+.register-btn:hover {
+  background: #333;
+}
+
+.register-btn:active {
+  background: #000;
+}
+
+.register-message {
+  margin-top: 12px;
+  font-size: 0.9rem;
+  color: #6b7280;
+  text-align: center;
+}
+
+.register-footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #374151;
+}
+
+.register-footer a {
+  font-weight: 700;
+  color: #111;
+  text-decoration: underline;
+}
+
+.register-footer a:hover {
+  color: #333;
+}
+
+@media (max-width: 520px) {
+  .register-name-row {
+    grid-template-columns: 1fr;
+  }
+}

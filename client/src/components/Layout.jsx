@@ -6,17 +6,18 @@ export default function Layout() {
       <header className="topbar">
         <div className="container nav">
           <Link className="brand" to="/login">
-            <img src="/images/easygrader_logo.png" alt="EasyGrader Logo" className="logo" />
-            <span>EasyGrader</span>
+            <img src="/images/easygrade_logo.svg" alt="EasyGrade" className="logo" />
+            <span>EasyGrade</span>
           </Link>
 
           <nav className="nav-links">
             <Link to="/login">Log in</Link>
+            <Link to="/register">Register</Link>
           </nav>
 
           <div className="nav-actions">
             <Link className="btn" to="/login">Log in</Link>
-            <Link className="btn primary" to="/login">Get started</Link>
+            <Link className="btn primary" to="/register">Get started</Link>
           </div>
         </div>
       </header>
